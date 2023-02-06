@@ -1,0 +1,65 @@
+/* makes the size contain all the padding,border and margins */
+* {
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  color: blue;
+}
+
+#main,
+#list {
+  position: relative;
+  left: 10;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80vh;
+  width: 80vw;
+  background-color: aliceblue;
+  border-style: solid;
+  overflow: scroll;
+}
+
+
+form {
+  border: 5px double gray;
+  padding: 15px;
+  position: relative;
+}
+
+.add {
+  position: absolute;
+  right: 92px;
+  bottom: 4px;
+}
+
+a {
+  font-style: normal;
+  color: black;
+  text-decoration: none;
+}
+
+#list {
+  align-items: flex-start;
+}
+
+ul, ol, #delete {
+    padding-top: 15px;
+}
+ul>li {
+    list-style-type: none;
+}
+
+#list>div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+#delete>button {
+  margin: 1px;
+
+}
